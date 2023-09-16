@@ -9,11 +9,22 @@ import { HiDownload } from "react-icons/hi";
 import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
-
+import { useState, useEffect } from "react";
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
+  const [showSpanish, setShowSpanish] = useState(true);
+
+  useEffect(() => {
+    if (showSpanish) {
+      const timeout = setTimeout(() => {
+        setShowSpanish(false);
+      }, 4000); // 4 seconds delay, adjust as needed
+
+      return () => clearTimeout(timeout);
+    }
+  }, [showSpanish]);
   return (
     <section
       ref={ref}
@@ -33,22 +44,32 @@ export default function Intro() {
             <Image
               src="/foto_sandro.jpeg"
               alt="Sandro Bengoa"
-              width="300"
-              height="300"
+              width="500"
+              height="500"
               quality="95"
               priority={true}
-              className="h-32 w-32 rounded-[30px] object-cover border-[0.3rem] border-gray-700 shadow-xl"
+              className="h-32 w-32 rounded-[10px] object-cover border-[0.3rem] border-gray-700 shadow-xl"
             />
           </motion.div>
         </div>
       </div>
-      <motion.h1
-        className="mb-10 mt-4 px-4 text-2x1 font-medium !leading-[1.5] sm:text-4x1"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={showSpanish ? { opacity: 1, y: 0 } : { opacity: 0, y: -100 }}
+        transition={{ duration: 1 }}
+        className="mb-10 mt-10 px-4 text-6xl sm:text-7xl"
       >
-        <span> Hello </span>
-      </motion.h1>
+        Bienvenidos a mi pagina web
+      </motion.div>
+
+      <motion.div
+        initial={{ opacity: 0, y: 100 }}
+        animate={!showSpanish ? { opacity: 1, y: 0 } : { opacity: 0 }}
+        transition={{ duration: 1 }}
+        className="mb-10 mt-10 px-4 text-6xl sm:text-7xl"
+      >
+        Welcome to my website
+      </motion.div>
       <motion.div
         className="flex flex-col sm:flex-row
       items-center justify-center gap-3 px-4 text-lg font-medium"

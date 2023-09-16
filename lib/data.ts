@@ -1,11 +1,6 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
 import { FaReact } from "react-icons/fa";
-import mcKinsey from "@public/mckinseyLogo.png";
-import wescon from "@public/wesconLogo.png";
-import yoyo from "@public/yoyoLogo.png";
-import vertice from "@public/verticeLogo.png";
-import cambioPeru from "@public/cambioperuLogo.png";
 
 export const links = [
   {
@@ -73,33 +68,69 @@ export const projectsData = [
   {
     title: "Yoyo",
     description:
-      "Developing web app to monetize song queues at parties using upvote and downvote system",
-    tags: ["React", "TypeScript", "Next.js", "ChakraUI", "Spotfiy API"],
-    imageUrl: "@public/yoyoLogo.png",
-  },
-  {
-    title: "Monowheel - ME1670",
-    description:
-      "Collaboratively designed a monowheel concept for Computer Aided Design Class",
-    tags: ["Sketching", "SolidWorks", "KeyShot"],
-    imageUrl: "@public/monowheel.44.mp4",
+      "Designed and developed an interactive web application to monetize and prioritize song queues at social events via a user-driven upvote and downvote mechanism, integrating with the Spotify API.",
+    tags: [
+      "React",
+      "TypeScript",
+      "Next.js",
+      "Chakra UI",
+      "Spotfiy API",
+      "Figma",
+    ],
+    imageUrl: "https://d30m9zq0h8yaq.cloudfront.net/yoyo.png",
   },
   {
     title: "Scrappy Doo to the Rescue",
     description:
-      "Fully autonomous robot that completes a set of tasks for Mechanical Engineering Creative Decisions & Design",
+      "Engineered a fully autonomous robotic system capable of executing predefined tasks, employing Arduino technologies and C++ programming, as part of an advanced Mechanical Engineering design project.",
     tags: ["Arduino", "SolidWorks", "C++"],
+    imageUrl: "https://d30m9zq0h8yaq.cloudfront.net/scrappydoo.png",
   },
+  {
+    title: "Monowheel - ME1670",
+    description:
+      "Collaborated on the conceptualization and design of an innovative monowheel, leveraging advanced CAD tools such as SolidWorks and KeyShot for a specialized design course.",
+    tags: ["Sketching", "SolidWorks", "KeyShot"],
+    imageUrl: "https://d30m9zq0h8yaq.cloudfront.net/monowheel.png",
+  },
+
   {
     title: "TecniKo App",
     description:
-      "Developed an Web App MVP to connect a network of technicians with clients, fighting unemployment crisis in Lima, Peru.",
-    tags: [
-      "Product Management",
-      "Business Operations",
-      "Marketing",
-      "Graphic Design",
-    ],
-    imageUrl: "@public/tecnikoLogo.png",
+      "Spearheaded the development of a Web App MVP to bridge the gap between skilled technicians and potential clients, addressing the unemployment crisis in Lima, Peru. Oversaw product management, business operations, marketing strategies, and graphic design elements.",
+    tags: ["Product Management", "Business Operations", "Graphic Design"],
+    imageUrl: "https://d30m9zq0h8yaq.cloudfront.net/Tecniko.png",
   },
-];
+] as const;
+
+export const skillsData = [
+  "MATLAB",
+  "TypeScript",
+  "Next.js",
+  "Chakra UI",
+  "Figma",
+  "Python",
+  "C++",
+  "SolidWorks",
+  "MongoDB",
+  "AWS",
+  "Git",
+] as const;
+
+export const languagesData = [
+  {
+    name: "English",
+    level: 10,
+    flagImage: "https://d30m9zq0h8yaq.cloudfront.net/uk.png",
+  },
+  {
+    name: "Spanish",
+    level: 10,
+    flagImage: "https://d30m9zq0h8yaq.cloudfront.net/spain.png",
+  },
+  {
+    name: "French",
+    level: 5,
+    flagImage: "https://d30m9zq0h8yaq.cloudfront.net/france.png",
+  },
+] as const;
