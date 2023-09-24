@@ -30,9 +30,9 @@ export default function Experience() {
               <VerticalTimelineElement
                 contentStyle={{
                   background:
-                    theme === "dark" ? "#f3f4f6" : "rgba(255,255,255,0.05)",
-                  boxShadow: "xl",
-                  borderRadius: "2rem",
+                    theme === "light" ? "#f3f4f6" : "rgba(255,255,255,0.05)",
+                  boxShadow: "lg",
+                  borderRadius: "rem",
                   border: "1px solid rgba(0,0,0,0.05)",
                   textAlign: "left",
                   padding: "1.3rem 2rem",
