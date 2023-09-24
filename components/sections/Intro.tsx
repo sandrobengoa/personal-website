@@ -53,14 +53,14 @@ export default function Intro() {
           </motion.div>
         </div>
       </div>
-      <div className="relative mb-48 mt-10 px-4 text-6xl sm:text-7xl">
+      <div className="relative mb-48 mt-10 px-4 text-4xl sm:text-6xl">
         <motion.div
           initial={{ opacity: 0 }}
           animate={showSpanish ? { opacity: 1, y: 0 } : { opacity: 0, y: -100 }}
           transition={{ duration: 1 }}
           className="absolute inset-0"
         >
-          Bienvenidos a mi pagina web
+          ¡Bienvenidos a mi pagina web!
         </motion.div>
 
         <motion.div
@@ -69,7 +69,7 @@ export default function Intro() {
           transition={{ duration: 1 }}
           className="absolute inset-0"
         >
-          Welcome to my website
+          Welcome to my website!
         </motion.div>
       </div>
       <motion.div
