@@ -24,7 +24,7 @@ export default function LanguageLevel({ levelOverTen }: Props) {
   const numberOfEmptySquares = 10 - levelOverTen;
 
   return (
-    <div className="flex gap-1 text-xs text-gray-700 dark:text-gray-400">
+    <div className="flex gap-1 text-sm text-gray-700 dark:text-gray-400">
       {createArrayFromN(levelOverTen).map((l, i) => (
         <motion.span
           key={i}

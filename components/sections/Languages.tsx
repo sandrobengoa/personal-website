@@ -42,10 +42,10 @@ export default function Languages() {
       >
         {languagesData.map((language, index) => (
           <li
-            className="bg-white borderBlack rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
+            className="bg-white borderBlack shadow-lg rounded-xl px-5 py-3 dark:bg-white/10 dark:text-white/80"
             key={index}
           >
-            <div className="flex gap-1 items-center mb-1">
+            <div className="flex gap-1 items-center mb-1 ">
               <Image
                 src={language.flagImage}
                 alt={language.name}

@@ -20,7 +20,7 @@ export default function Intro() {
     if (showSpanish) {
       const timeout = setTimeout(() => {
         setShowSpanish(false);
-      }, 4000); // 4 seconds delay, adjust as needed
+      }, 2500);
 
       return () => clearTimeout(timeout);
     }
@@ -44,35 +44,37 @@ export default function Intro() {
             <Image
               src="/foto_sandro.jpeg"
               alt="Sandro Bengoa"
-              width="500"
-              height="500"
+              width="1000"
+              height="1000"
               quality="95"
               priority={true}
-              className="h-32 w-32 rounded-[10px] object-cover border-[0.3rem] border-gray-700 shadow-xl"
+              className="h-40 w-40 rounded-[10px] object-cover border-[0.3rem] border-gray-700 shadow-xl"
             />
           </motion.div>
         </div>
       </div>
-      <motion.div
-        initial={{ opacity: 0 }}
-        animate={showSpanish ? { opacity: 1, y: 0 } : { opacity: 0, y: -100 }}
-        transition={{ duration: 1 }}
-        className="mb-10 mt-10 px-4 text-6xl sm:text-7xl"
-      >
-        Bienvenidos a mi pagina web
-      </motion.div>
+      <div className="relative mb-48 mt-10 px-4 text-6xl sm:text-7xl">
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={showSpanish ? { opacity: 1, y: 0 } : { opacity: 0, y: -100 }}
+          transition={{ duration: 1 }}
+          className="absolute inset-0"
+        >
+          Bienvenidos a mi pagina web
+        </motion.div>
 
-      <motion.div
-        initial={{ opacity: 0, y: 100 }}
-        animate={!showSpanish ? { opacity: 1, y: 0 } : { opacity: 0 }}
-        transition={{ duration: 1 }}
-        className="mb-10 mt-10 px-4 text-6xl sm:text-7xl"
-      >
-        Welcome to my website
-      </motion.div>
+        <motion.div
+          initial={{ opacity: 0, y: 100 }}
+          animate={!showSpanish ? { opacity: 1, y: 0 } : { opacity: 0 }}
+          transition={{ duration: 1 }}
+          className="absolute inset-0"
+        >
+          Welcome to my website
+        </motion.div>
+      </div>
       <motion.div
         className="flex flex-col sm:flex-row
-      items-center justify-center gap-3 px-4 text-lg font-medium"
+      items-center justify-center gap-3 px-4 text-lg font-medium "
         initial={{ opacity: 0, y: 100 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{
@@ -104,7 +106,7 @@ export default function Intro() {
         </a>
         <a
           className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full transition active:scale-105 borderBlack dark:bg-white/10 dark:text-white/80 focus:scale-[1.15] hover:scale-[1.15] "
-          href="https://www.linkedin.com/in/sandro-bengoa/"
+          href="https://www.linkedin.com/in/sandrobengoa/"
           target="_blank"
           rel="noopener"
           aria-label="Open Linkedin profile"

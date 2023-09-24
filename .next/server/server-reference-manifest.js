@@ -1,1 +1,1 @@
-self.__RSC_SERVER_MANIFEST="{\n  \"node\": {},\n  \"edge\": {}\n}"
+self.__RSC_SERVER_MANIFEST="{\n  \"node\": {\n    \"9cb109e9e7f9dfb8a469bb10b2d892d93972e81a\": {\n      \"workers\": {\n        \"app/page\": \"(actionBrowser)/./node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fsandrobengoa%2FDesktop%2Fpersonal-website%2Factions%2FsendEmail.ts%22%2C%5B%22sendEmail%22%5D%5D%5D&__client_imported__=true!\"\n      },\n      \"layer\": {\n        \"app/page\": \"actionBrowser\"\n      }\n    }\n  },\n  \"edge\": {}\n}"

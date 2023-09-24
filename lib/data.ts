@@ -12,17 +12,18 @@ export const links = [
     hash: "#about",
   },
   {
-    name: "Projects",
-    hash: "#projects",
+    name: "Experience",
+    hash: "#experience",
   },
   {
     name: "Skills",
     hash: "#skills",
   },
   {
-    name: "Experience",
-    hash: "#experience",
+    name: "Projects",
+    hash: "#projects",
   },
+
   {
     name: "Contact",
     hash: "#contact",
@@ -98,7 +99,7 @@ export const projectsData = [
     title: "TecniKo App",
     description:
       "Spearheaded the development of a Web App MVP to bridge the gap between skilled technicians and potential clients, addressing the unemployment crisis in Lima, Peru. Oversaw product management, business operations, marketing strategies, and graphic design elements.",
-    tags: ["Product Management", "Business Operations", "Graphic Design"],
+    tags: ["Product Management", "Biz Ops", "Graphic Design"],
     imageUrl: "https://d30m9zq0h8yaq.cloudfront.net/Tecniko.png",
   },
 ] as const;
