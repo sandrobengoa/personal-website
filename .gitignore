@@ -1,1 +1,12 @@
 node_modules
+# Ignore build folder
+.next/
+
+# Ignore .gz files
+*.gz
+
+# Ignore Node modules
+node_modules/
+
+# Ignore cache
+.cache/
