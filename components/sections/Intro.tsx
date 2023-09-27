@@ -32,26 +32,24 @@ export default function Intro() {
       className="max-x-[50rem] text-center scroll-mt-[100rem]"
     >
       <div className="flex items-center justify-center">
-        <div className="relative">
-          <motion.div
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: "tween",
-              duration: 0.2,
-            }}
-          >
-            <Image
-              src="/foto_sandro.jpeg"
-              alt="Sandro Bengoa"
-              width="1000"
-              height="1000"
-              quality="95"
-              priority={true}
-              className="h-40 w-40 rounded-[10px] object-cover border-[0.3rem] border-gray-700 shadow-xl"
-            />
-          </motion.div>
-        </div>
+        <motion.div
+          initial={{ opacity: 0, scale: 0 }}
+          animate={{ opacity: 1, scale: 1 }}
+          transition={{
+            type: "tween",
+            duration: 0.2,
+          }}
+        >
+          <Image
+            src="/foto_sandro.jpeg"
+            alt="Sandro Bengoa"
+            width="1000"
+            height="1000"
+            quality="95"
+            priority={true}
+            className="h-40 w-40 rounded-[10px] object-cover border-[0.3rem] border-gray-700 shadow-xl"
+          />
+        </motion.div>
       </div>
       <div className="relative mb-48 mt-10 px-4 text-4xl sm:text-6xl">
         <motion.div
@@ -104,24 +102,26 @@ export default function Intro() {
           Download CV {""}
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
-        <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full transition active:scale-105 borderBlack dark:bg-white/10 dark:text-white/80 focus:scale-[1.15] hover:scale-[1.15] "
-          href="https://www.linkedin.com/in/sandrobengoa/"
-          target="_blank"
-          rel="noopener"
-          aria-label="Open Linkedin profile"
-        >
-          <BsLinkedin />
-        </a>
-        <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full transition active:scale-105 borderBlack dark:bg-white/10 dark:text-white/80 focus:scale-[1.15] hover:scale-[1.15] "
-          href="https://github.com/sandrobengoa"
-          target="_blank"
-          rel="noopener"
-          aria-label="Open Github profile"
-        >
-          <FaGithubSquare />
-        </a>
+        <div className="flex items-center gap-2">
+          <a
+            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full transition active:scale-105 borderBlack dark:bg-white/10 dark:text-white/80 focus:scale-[1.15] hover:scale-[1.15] "
+            href="https://www.linkedin.com/in/sandrobengoa/"
+            target="_blank"
+            rel="noopener"
+            aria-label="Open Linkedin profile"
+          >
+            <BsLinkedin />
+          </a>
+          <a
+            className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full transition active:scale-105 borderBlack dark:bg-white/10 dark:text-white/80 focus:scale-[1.15] hover:scale-[1.15] "
+            href="https://github.com/sandrobengoa"
+            target="_blank"
+            rel="noopener"
+            aria-label="Open Github profile"
+          >
+            <FaGithubSquare />
+          </a>
+        </div>
       </motion.div>
     </section>
   );
