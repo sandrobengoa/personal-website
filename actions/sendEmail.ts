@@ -20,7 +20,7 @@ export const sendEmail = async (formData: FormData) => {
     return { error: "Invalid message" };
   }
   if (!resendApi) {
-    return { error: "Please provide a reswnd api key" };
+    return { error: "Please provide a resend api key" };
   }
   const resend = new Resend(resendApi);
 
