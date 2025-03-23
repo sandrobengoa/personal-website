@@ -22,7 +22,7 @@ export default function Home() {
       <SectionDivider hideDivider />
       <Projects />
       <SectionDivider hideDivider />
-      <Contact />
+      {/* <Contact /> */}
     </main>
   );
 }
