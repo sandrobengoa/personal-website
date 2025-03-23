@@ -32,12 +32,19 @@ export const links = [
 
 export const experienceData = [
   {
+    title: "Business Analyst @ McKinsey & Company",
+    location: "Austin, TX",
+    description: "",
+    icon: React.createElement(CgWorkAlt),
+    date: "August 2024 - Present",
+  },
+  {
     title: "Associate Software Engineer @ Vertice AI",
     location: "Atlanta, GA",
     description:
       "Developing Frontend for a Saas platform of predictive data analytics for the credit union industry. Specifically refactoring the solution for maintaining a single codebase for multiple clients.",
     icon: React.createElement(CgWorkAlt),
-    date: "May 2023 - Present",
+    date: "May 2023 - February 2024",
   },
   {
     title: "Business Analyst Intern @ McKinsey & Company",
